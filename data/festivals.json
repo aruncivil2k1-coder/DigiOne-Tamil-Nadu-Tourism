@@ -1,0 +1,12 @@
+[
+  {
+    "name": "Pongal",
+    "img": "assets/pongal.jpg",
+    "description": "Harvest festival."
+  },
+  {
+    "name": "Karthigai Deepam",
+    "img": "assets/karthigai.jpg",
+    "description": "Festival of lights."
+  }
+]

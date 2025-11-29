@@ -1,0 +1,138 @@
+{
+  "Chennai": [
+    {
+      "name": "Chennai Place 1",
+      "description": "A popular site in Chennai known for its charm and attractions. Best visited in cooler months.",
+      "img": "assets/chennai_place_1.jpg"
+    },
+    {
+      "name": "Chennai Place 2",
+      "description": "A popular site in Chennai known for its charm and attractions. Best visited in cooler months.",
+      "img": "assets/chennai_place_2.jpg"
+    },
+    {
+      "name": "Chennai Place 3",
+      "description": "A popular site in Chennai known for its charm and attractions. Best visited in cooler months.",
+      "img": "assets/chennai_place_3.jpg"
+    }
+  ],
+  "Coimbatore": [
+    {
+      "name": "Coimbatore Place 1",
+      "description": "A popular site in Coimbatore known for its charm and attractions. Best visited in cooler months.",
+      "img": "assets/coimbatore_place_1.jpg"
+    },
+    {
+      "name": "Coimbatore Place 2",
+      "description": "A popular site in Coimbatore known for its charm and attractions. Best visited in cooler months.",
+      "img": "assets/coimbatore_place_2.jpg"
+    },
+    {
+      "name": "Coimbatore Place 3",
+      "description": "A popular site in Coimbatore known for its charm and attractions. Best visited in cooler months.",
+      "img": "assets/coimbatore_place_3.jpg"
+    }
+  ],
+  "Madurai": [
+    {
+      "name": "Madurai Place 1",
+      "description": "A popular site in Madurai known for its charm and attractions. Best visited in cooler months.",
+      "img": "assets/madurai_place_1.jpg"
+    },
+    {
+      "name": "Madurai Place 2",
+      "description": "A popular site in Madurai known for its charm and attractions. Best visited in cooler months.",
+      "img": "assets/madurai_place_2.jpg"
+    },
+    {
+      "name": "Madurai Place 3",
+      "description": "A popular site in Madurai known for its charm and attractions. Best visited in cooler months.",
+      "img": "assets/madurai_place_3.jpg"
+    }
+  ],
+  "Trichy": [
+    {
+      "name": "Trichy Place 1",
+      "description": "A popular site in Trichy known for its charm and attractions. Best visited in cooler months.",
+      "img": "assets/trichy_place_1.jpg"
+    },
+    {
+      "name": "Trichy Place 2",
+      "description": "A popular site in Trichy known for its charm and attractions. Best visited in cooler months.",
+      "img": "assets/trichy_place_2.jpg"
+    },
+    {
+      "name": "Trichy Place 3",
+      "description": "A popular site in Trichy known for its charm and attractions. Best visited in cooler months.",
+      "img": "assets/trichy_place_3.jpg"
+    }
+  ],
+  "Salem": [
+    {
+      "name": "Salem Place 1",
+      "description": "A popular site in Salem known for its charm and attractions. Best visited in cooler months.",
+      "img": "assets/salem_place_1.jpg"
+    },
+    {
+      "name": "Salem Place 2",
+      "description": "A popular site in Salem known for its charm and attractions. Best visited in cooler months.",
+      "img": "assets/salem_place_2.jpg"
+    },
+    {
+      "name": "Salem Place 3",
+      "description": "A popular site in Salem known for its charm and attractions. Best visited in cooler months.",
+      "img": "assets/salem_place_3.jpg"
+    }
+  ],
+  "Tirunelveli": [
+    {
+      "name": "Tirunelveli Place 1",
+      "description": "A popular site in Tirunelveli known for its charm and attractions. Best visited in cooler months.",
+      "img": "assets/tirunelveli_place_1.jpg"
+    },
+    {
+      "name": "Tirunelveli Place 2",
+      "description": "A popular site in Tirunelveli known for its charm and attractions. Best visited in cooler months.",
+      "img": "assets/tirunelveli_place_2.jpg"
+    },
+    {
+      "name": "Tirunelveli Place 3",
+      "description": "A popular site in Tirunelveli known for its charm and attractions. Best visited in cooler months.",
+      "img": "assets/tirunelveli_place_3.jpg"
+    }
+  ],
+  "Kanyakumari": [
+    {
+      "name": "Kanyakumari Place 1",
+      "description": "A popular site in Kanyakumari known for its charm and attractions. Best visited in cooler months.",
+      "img": "assets/kanyakumari_place_1.jpg"
+    },
+    {
+      "name": "Kanyakumari Place 2",
+      "description": "A popular site in Kanyakumari known for its charm and attractions. Best visited in cooler months.",
+      "img": "assets/kanyakumari_place_2.jpg"
+    },
+    {
+      "name": "Kanyakumari Place 3",
+      "description": "A popular site in Kanyakumari known for its charm and attractions. Best visited in cooler months.",
+      "img": "assets/kanyakumari_place_3.jpg"
+    }
+  ],
+  "Ooty": [
+    {
+      "name": "Ooty Place 1",
+      "description": "A popular site in Ooty known for its charm and attractions. Best visited in cooler months.",
+      "img": "assets/ooty_place_1.jpg"
+    },
+    {
+      "name": "Ooty Place 2",
+      "description": "A popular site in Ooty known for its charm and attractions. Best visited in cooler months.",
+      "img": "assets/ooty_place_2.jpg"
+    },
+    {
+      "name": "Ooty Place 3",
+      "description": "A popular site in Ooty known for its charm and attractions. Best visited in cooler months.",
+      "img": "assets/ooty_place_3.jpg"
+    }
+  ]
+}
