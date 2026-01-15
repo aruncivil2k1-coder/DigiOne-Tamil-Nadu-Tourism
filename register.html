@@ -1,0 +1,29 @@
+<p>&lt;!DOCTYPE html&gt;</p>
+<p>&lt;html&gt;</p>
+<p>&lt;head&gt;</p>
+<p>&lt;title&gt;Register&lt;/title&gt;</p>
+<p>&lt;/head&gt;</p>
+<p>&lt;body&gt;</p>
+<p>&lt;h2&gt;Create Account&lt;/h2&gt;</p>
+<p>&lt;input id="email" placeholder="Email"&gt;</p>
+<p>&lt;input id="password" type="password" placeholder="Password"&gt;</p>
+<p>&lt;button onclick="register()"&gt;Register&lt;/button&gt;</p>
+<p>&lt;script type="module"&gt;</p>
+<p>import { initializeApp } from</p>
+<p>"https://www.gstatic.com/firebasejs/9.23.0/firebase-app.js";</p>
+<p>import { getAuth, createUserWithEmailAndPassword } from</p>
+<p>"https://www.gstatic.com/firebasejs/9.23.0/firebase-auth.js";</p>
+<p>const firebaseConfig = {</p>
+<p>apiKey: "YOUR_API_KEY",</p>
+<p>authDomain: "YOUR_PROJECT.firebaseapp.com"</p>
+<p>};</p>
+<p>const app = initializeApp(firebaseConfig);</p>
+<p>const auth = getAuth(app);</p>
+<p>window.register = function () {</p>
+<p>createUserWithEmailAndPassword(auth, email.value, password.value)</p>
+<p>.then(() =&gt; alert("Registration Successful"))</p>
+<p>.catch(err =&gt; alert(err.message));</p>
+<p>};</p>
+<p>&lt;/script&gt;</p>
+<p>&lt;/body&gt;</p>
+<p>&lt;/html&gt;</p>
