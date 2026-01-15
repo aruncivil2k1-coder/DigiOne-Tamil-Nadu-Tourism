@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Tamil Nadu Tourism - Dashboard</title>
+<link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+<header class="topbar">
+  <img src="assets/logo.png" alt="logo" class="logo"/><h1>Tamil Nadu Tourism</h1>
+  <nav class="nav"><a href="index.html">Home</a><a href="districts.html">Districts</a><a href="places.html">Places</a><a href="festivals.html">Festivals</a><a href="login.html">Login</a></nav>
+</header>
+
+<main class="hero-dashboard">
+  <section class="hero-slider" id="hero">
+    <!-- slider images inserted by JS -->
+  </section>
+
+  <section class="search-area">
+    <input id="search" placeholder="Search places, districts, festivals..." />
+    <div class="quick-cats">
+      <button data-cat="waterfall">Waterfalls</button>
+      <button data-cat="temple">Temples</button>
+      <button data-cat="beach">Beaches</button>
+      <button data-cat="hill">Hill Stations</button>
+    </div>
+  </section>
+
+  <section class="tiles container">
+    <div class="tile" id="tile-districts">
+      <h3>Popular Districts</h3>
+      <div class="tile-grid" id="districtsGrid"></div>
+      <a class="view-more" href="districts.html">View all districts →</a>
+    </div>
+
+    <div class="tile" id="tile-popular">
+      <h3>Popular Places</h3>
+      <div class="tile-grid" id="popularGrid"></div>
+      <a class="view-more" href="places.html">Browse all places →</a>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">© 2025 DigiOne Company — Tamil Nadu Tourism Guide</footer>
+
+<script src="app.js"></script>
+</body>
+</html>
