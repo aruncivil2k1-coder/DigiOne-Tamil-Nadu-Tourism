@@ -6,20 +6,43 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <!-- SEO -->
-  <meta name="description" content="Explore Tamil Nadu tourism – districts, places, festivals, bookings and reviews.">
-  <meta name="keywords" content="Tamil Nadu tourism, temples, beaches, travel">
+  <meta name="description" content="Explore Tamil Nadu tourism – districts, places, festivals, bookings and reviews. Powered by DigiOne.">
+  <meta name="keywords" content="Tamil Nadu tourism, temples, beaches, hill stations, travel guide">
+  <meta name="author" content="DigiOne">
   <meta name="robots" content="index, follow">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="DigiOne – Tamil Nadu Tourism">
+  <meta property="og:description" content="Complete travel guide for Tamil Nadu">
+  <meta property="og:image" content="assets/images/banner.jpg">
+  <meta property="og:type" content="website">
 
   <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
+<!-- HEADER / NAV -->
+<header class="topbar">
+  <img src="assets/images/logo.png" class="logo" alt="DigiOne Logo">
+
+  <nav class="nav">
+    <a href="index.html">Home</a>
+    <a href="districts.html">Districts</a>
+    <a href="places.html">Places</a>
+    <a href="festivals.html">Festivals</a>
+    <a href="booking.html">Booking</a>
+    <a href="reviews.html">Reviews</a>
+    <a href="login.html">Login</a>
+  </nav>
+</header>
+
 <!-- HERO -->
 <section class="hero">
   <div class="hero-overlay">
     <h1>Explore Tamil Nadu</h1>
     <p>Temples • Hills • Beaches • Culture</p>
+
     <div class="hero-buttons">
       <a href="districts.html" class="btn">Explore Districts</a>
       <a href="booking.html" class="btn secondary">Book Now</a>
@@ -35,32 +58,81 @@
     <h2>Top Destinations</h2>
 
     <div class="grid">
-      <div class="card">Chennai</div>
-      <div class="card">Madurai</div>
-      <div class="card">Ooty</div>
-      <div class="card">Kanyakumari</div>
-      <div class="card">Rameswaram</div>
-      <div class="card">Coimbatore</div>
+      <a class="card" href="places.html?district=Chennai">Chennai</a>
+      <a class="card" href="places.html?district=Madurai">Madurai</a>
+      <a class="card" href="places.html?district=Nilgiris">Ooty</a>
+      <a class="card" href="places.html?district=Kanyakumari">Kanyakumari</a>
+      <a class="card" href="places.html?district=Ramanathapuram">Rameswaram</a>
+      <a class="card" href="places.html">View All</a>
     </div>
 
     <h2>Popular Festivals</h2>
-    <p>Pongal, Chithirai Festival, Karthigai Deepam, Navaratri</p>
+    <p>
+      <a href="festivals.html">Pongal</a>,
+      <a href="festivals.html">Chithirai Festival</a>,
+      <a href="festivals.html">Karthigai Deepam</a>,
+      <a href="festivals.html">Navaratri</a>
+    </p>
   </div>
 
-  <!-- AD SPACE -->
+  <!-- AD PANEL -->
   <aside class="ad-panel">
     <h3>Sponsored</h3>
-
-    <div class="ad-box">Ad Space 300×250</div>
+    <div class="ad-box">Ad Space 300 × 250</div>
     <div class="ad-box">Hotel Deals</div>
-    <div class="ad-box">Travel Insurance</div>
+    <div class="ad-box">Travel Offers</div>
   </aside>
 
 </section>
 
+<!-- FOOTER -->
 <footer class="footer">
-  <p>© 2026 DigiOne – Tamil Nadu Tourism</p>
+  <div class="footer-grid">
+
+    <div>
+      <h4>DigiOne</h4>
+      <p>
+        DigiOne is a Tamil Nadu tourism platform helping travelers explore,
+        book, and review destinations across the state.
+      </p>
+    </div>
+
+    <div>
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="districts.html">Districts</a></li>
+        <li><a href="places.html">Places</a></li>
+        <li><a href="festivals.html">Festivals</a></li>
+        <li><a href="booking.html">Bookings</a></li>
+      </ul>
+    </div>
+
+    <div>
+      <h4>Legal</h4>
+      <ul>
+        <li><a href="privacy.html">Privacy Policy</a></li>
+        <li><a href="terms.html">Terms of Use</a></li>
+      </ul>
+    </div>
+
+    <div>
+      <h4>Follow Us</h4>
+      <div class="social-links">
+        <a href="https://facebook.com" target="_blank">Facebook</a>
+        <a href="https://instagram.com" target="_blank">Instagram</a>
+        <a href="https://twitter.com" target="_blank">Twitter</a>
+        <a href="https://youtube.com" target="_blank">YouTube</a>
+      </div>
+    </div>
+
+  </div>
+
+  <p class="copyright">
+    © 2026 DigiOne – Tamil Nadu Tourism. All rights reserved.
+  </p>
 </footer>
 
 </body>
 </html>
+
