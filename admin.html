@@ -1,50 +1,66 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
   <title>Admin Panel – DigiOne</title>
-  <!-- SEO Meta Tags -->
-<meta name="description" content="Explore Tamil Nadu tourism – districts, places, festivals, bookings and reviews. Powered by DigiOne.">
-<meta name="keywords" content="Tamil Nadu tourism, temples, beaches, festivals, travel guide, DigiOne">
-<meta name="author" content="DigiOne">
-<meta name="robots" content="index, follow">
 
-<!-- Open Graph (Social Media) -->
-<meta property="og:title" content="DigiOne Tamil Nadu Tourism">
-<meta property="og:description" content="Complete travel guide for Tamil Nadu">
-<meta property="og:type" content="website">
-<meta property="og:image" content="assets/images/logo.png">
-<meta property="og:url" content="https://YOURDOMAIN.com/">
+  <!-- SEO (Admin should not be indexed) -->
+  <meta name="robots" content="noindex, nofollow">
 
-<!-- Mobile Theme -->
-<meta name="theme-color" content="#0a3cff">
+  <!-- Theme -->
+  <meta name="theme-color" content="#0a3cff">
 
-</head>
+  <!-- Styles -->
   <link rel="stylesheet" href="css/style.css">
+</head>
+
 <body>
-  <header>
-    <nav class="nav">
-  <a href="index.html">Home</a>
-  <a href="districts.html">Districts</a>
-  <a href="places.html">Places</a>
-  <a href="festivals.html">Festivals</a>
-  <a href="booking.html">Bookings</a>
-  <a href="reviews.html">Reviews</a>
-</nav>
-  <header>
-<h2>Admin Dashboard</h2>
 
-<ul id="data"></ul>
+<header class="topbar">
+  <img src="assets/images/logo.png" class="logo" alt="DigiOne Logo">
 
+  <nav class="nav">
+    <a href="index.html">Home</a>
+    <a href="districts.html">Districts</a>
+    <a href="places.html">Places</a>
+    <a href="festivals.html">Festivals</a>
+    <a href="booking.html">Bookings</a>
+    <a href="reviews.html">Reviews</a>
+  </nav>
+</header>
+
+<main class="container">
+  <h2>Admin Dashboard</h2>
+  <p>Live booking data:</p>
+
+  <ul id="data"></ul>
+</main>
+
+<footer class="footer">
+  <p>Admin Panel – DigiOne Tourism</p>
+</footer>
+
+<!-- Firebase -->
 <script src="js/firebase-config.js"></script>
+
 <script>
-firebase.database().ref("bookings").on("value", snapshot => {
-  const list = document.getElementById("data");
-  list.innerHTML = "";
-  snapshot.forEach(child => {
-    list.innerHTML += "<li>" + JSON.stringify(child.val()) + "</li>";
+if (typeof firebase !== "undefined") {
+  firebase.database().ref("bookings").on("value", snapshot => {
+    const list = document.getElementById("data");
+    list.innerHTML = "";
+
+    snapshot.forEach(child => {
+      const li = document.createElement("li");
+      li.textContent = JSON.stringify(child.val());
+      list.appendChild(li);
+    });
   });
-});
+} else {
+  console.error("Firebase not loaded");
+}
 </script>
+
 </body>
 </html>
-<script src="js/firebase-config.js"></script>
