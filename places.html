@@ -1,7 +1,75 @@
-<!doctype html><html><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><title>Places</title><link rel="stylesheet" href="styles.css"/></head><body>
-<header class="topbar"><img src="assets/logo.png" class="logo"/><h1>Places</h1><nav class="nav"><a href="index.html">Home</a></nav></header>
-<main class="container"><div id="placesList" class="grid"></div></main>
-<footer class="footer"><a href="index.html">Back Home</a></footer>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Places – DigiOne</title>
+
+  <!-- Global CSS -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header class="topbar">
+  <img src="assets/images/logo.png" class="logo" alt="DigiOne Logo">
+  <h1>Places</h1>
+
+  <nav class="nav">
+    <a href="index.html">Home</a>
+  </nav>
+</header>
+
+<main class="container">
+  <div id="placesList" class="grid"></div>
+</main>
+
+<footer class="footer">
+  <a href="index.html">Back Home</a>
+</footer>
+
+<!-- Places Loader -->
 <script>
-const params=new URLSearchParams(window.location.search);const district=params.get('district');fetch('data/data.json').then(r=>r.json()).then(data=>{const c=document.getElementById('placesList');if(district && data[district]){data[district].forEach(p=>{c.innerHTML += `<div class="card"><img src="${p.img}"><h3>${p.name}</h3><p>${p.description}</p></div>`;});} else {Object.keys(data).forEach(d=>{data[d].forEach(p=>{c.innerHTML += `<div class="card"><img src="${p.img}"><h3>${p.name}</h3><p>${p.description}</p></div>`;});});}});
-</script></body></html>
+const params = new URLSearchParams(window.location.search);
+const district = params.get('district');
+
+fetch('data/data.json')
+  .then(response => response.json())
+  .then(data => {
+    const container = document.getElementById('placesList');
+
+    // If district selected
+    if (district && data[district]) {
+      data[district].forEach(place => {
+        container.innerHTML += `
+          <div class="card">
+            <img src="${place.img}" alt="${place.name}">
+            <h3>${place.name}</h3>
+            <p>${place.description}</p>
+          </div>
+        `;
+      });
+    } 
+    // Show all places
+    else {
+      Object.keys(data).forEach(d => {
+        data[d].forEach(place => {
+          container.innerHTML += `
+            <div class="card">
+              <img src="${place.img}" alt="${place.name}">
+              <h3>${place.name}</h3>
+              <p>${place.description}</p>
+            </div>
+          `;
+        });
+      });
+    }
+  })
+  .catch(error => {
+    console.error("Error loading places:", error);
+  });
+</script>
+
+</body>
+</html>
+
