@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Admin Panel – DigiOne</title>
+</head>
+<body>
+<h2>Admin Dashboard</h2>
+
+<ul id="data"></ul>
+
+<script src="js/firebase-config.js"></script>
+<script>
+firebase.database().ref("bookings").on("value", snapshot => {
+  const list = document.getElementById("data");
+  list.innerHTML = "";
+  snapshot.forEach(child => {
+    list.innerHTML += "<li>" + JSON.stringify(child.val()) + "</li>";
+  });
+});
+</script>
+</body>
+</html>
